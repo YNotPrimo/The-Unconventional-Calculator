@@ -45,6 +45,8 @@ function calculateResult(calculationType) {
   } else if (calculationType === "DIVIDE") {
     currentResult /= enteredNumber;
     mathOperator = "/";
+  } else {
+    return;
   }
 
   createAndWriteLog(mathOperator, initialResult, enteredNumber);
